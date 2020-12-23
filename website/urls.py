@@ -21,5 +21,6 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('accounts.urls')),
     path('todo/', include('todo.urls')),
+    path('videorequest/', include('videorequest.urls')),
     path('', include('articles.urls'))
 ]

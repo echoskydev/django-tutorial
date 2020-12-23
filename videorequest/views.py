@@ -20,7 +20,7 @@ def vrform(request):
             new_req = Video(
                 videotitle=request.POST['videoname'], videodesc=request.POST['videodesc'])
             new_req.save()
-            return redirect('index')
+            return redirect('vdo_index')
     else:
         form = VideoForm()
 

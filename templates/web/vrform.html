@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+    <h4 class="display-5">Please enter request VDO</h4>
+    <hr class="my-2">
+    <p>
+    <form method="POST" action="{% url 'vrform' %}">
+        {% csrf_token %}
+        <div class="form-group row">
+            <label class="col-sm-2" for="">Title</label>
+            <div class="col-sm-6">
+                <!-- <input type="text" class="form-control" name="inputName" id="inputName" aria-describedby="helpId"
+                    placeholder=""> -->
+                {{form.videoname}}
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2" for="">Description</label>
+            <div class="col-sm-6">
+                <!-- <textarea class="form-control" name="comment" id="comment" rows="3"></textarea> -->
+                {{form.videodesc}}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 offset-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div>
+    </form>
+    </p>
+
+</div>
+
+{% endblock %}

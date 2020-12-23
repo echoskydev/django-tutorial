@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'articles',
     'accounts',
     'todo',
+    'videorequest',
 ]
 
 MIDDLEWARE = [

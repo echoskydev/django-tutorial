@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12">
+        <a class="btn btn-primary" href="{% url 'vrform' %}" role="button">Request VDO</a>
+    </div>
+</div>
+
+<hr>
+
+<ul class="list-unstyled">
+    {% for v in videos %}
+    <li class="media mb-3">
+        <a class="d-flex" href="#">
+            <img src="https://via.placeholder.com/70" alt="">
+        </a>
+        <div class="media-body ml-3">
+            <h5>{{ v.videotitle }}</h5>
+            {{ v.videodesc }}
+        </div>
+    </li>
+    {% endfor %}
+
+  </ul>
+
+{% endblock %}
