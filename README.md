@@ -1,4 +1,4 @@
-# Django Framework
+# Django Framework (Python)
 https://www.djangoproject.com/
 
 ## Installation
