@@ -1,13 +1,14 @@
-# django-tutorial
+# Django Framework
+https://www.djangoproject.com/
 
-# Install
-- python3 manage.py migrate OR python3 manage.py migrate [module]
-- python3 manage.py createsuperuser (username & password)
-- python3 manage.py runserver       
+## Installation
+- python manage.py migrate OR python3 manage.py migrate [module]
+- python manage.py createsuperuser (username & password)
+- python manage.py runserver 8000      
 
 
-# create module
-- python3 manage.py startapp todo   
+## create module
+- python manage.py startapp todo   
 
 
 ## How to install python 
